@@ -1,9 +1,10 @@
 
 import About from './component/About'
-import Catalog from './component/Catalog'
+// import Catalog from './component/Catalog'
 import Navbar from './component/Navbar'
 import Home from './component/Home'
 import Footer from './component/Footer'
+import Product from './component/Product'
 
 function App() {
 
@@ -12,7 +13,8 @@ function App() {
     <Navbar/>
      <Home />
      <About/>
-     <Catalog/>
+     {/* <Catalog/> */}
+     <Product />
      <Footer/>
     </div>
   )
