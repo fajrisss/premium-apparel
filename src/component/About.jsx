@@ -41,9 +41,9 @@ const About = () => {
             <div className="flex items-center gap-2">
               <h2 className="bg-secondary w-max px-3 py-1 rounded-full">1</h2>
               <p className="text-xl font-semibold">
-                Terverifikasi{" "}
-                <span className="text-secondary"> Higg Index</span> Sustainable
-                Apparel
+                Bahan{" "}
+                <span className="text-secondary"> Nyaman</span> dan
+                <span className="text-secondary"> Lembut</span> ketika digunakan
               </p>
             </div>
             <div className="flex items-center gap-2 py-6 md:py-8">
@@ -57,9 +57,8 @@ const About = () => {
               <h2 className="bg-secondary w-max px-3 py-1 rounded-full">3</h2>
               <p className="text-xl font-semibold">
                 Terverifikasi{" "}
-                <span className="text-secondary">OEKO-TEX100</span> Sehingga
-                Tidak Menimbulkan Risiko
-                <span className="text-secondary">Kesehatan</span>
+                <span className="text-secondary">OEKO-TEX100</span> dan <span className="text-secondary"> Higg Index</span> Sustainable
+                Apparel
               </p>
             </div>
           </div>

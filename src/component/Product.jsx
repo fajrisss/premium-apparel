@@ -65,13 +65,18 @@ const Product = () => {
   };
   return (
     <div>
-      <div className="bg-primary py-10 -mt-1 pt-[120px] md:pt-20 m-auto" id="product">
+      <div
+        className="bg-primary py-10 -mt-1 pt-[120px] md:pt-20 m-auto"
+        id="product"
+      >
         <div className="mt-7">
-          <h1 className="text-center pb-10 text-3xl font-black text-white">OUR PRODUCT</h1>
+          <h1 className="text-center pb-10 text-3xl font-black text-white">
+            OUR PRODUCT
+          </h1>
           <ul className="flex flex-wrap gap-3 justify-center items-center px-6 md:px-[130px]">
             {items.map((item) => (
               // eslint-disable-next-line react/jsx-key
-              <button type="button"  onClick={() => changeContent(item)}>
+              <button type="button" onClick={() => changeContent(item)}>
                 <li
                   key={item.id}
                   className="border-2 shadow-xl p-3 h-max w-[150px] md:w-48 rounded-md  text-left  text-white hover:scale-110  transition-all"
@@ -83,7 +88,9 @@ const Product = () => {
                   />
 
                   <div className="">
-                    <h3 className="text-lg font-semibold text-center">{item.name}</h3>
+                    <h3 className="text-lg font-semibold text-center py-2 px-5 bg-violet-800 rounded-md">
+                      {item.name}
+                    </h3>
                   </div>
                 </li>
               </button>
@@ -95,7 +102,7 @@ const Product = () => {
                 return (
                   // eslint-disable-next-line react/jsx-key
                   <div className="flex justify-center items-center fixed top-0 bottom-0 left-0 right-0 bg-black bg-opacity-50 z-50">
-                    <div className="border-2 shadow-xl p-3  w-3/4 h-max relative text-white bg-primary rounded-md  sm:w-96 flex flex-col items-center sm:p-5">
+                    <div className="border-2 shadow-xl p-3  w-3/4  relative text-white bg-primary rounded-md  sm:w-96 flex flex-col items-center sm:p-5 h-[500px]">
                       <button
                         className="py-1 px-2.5 text-sm rounded-full bg-red-600 absolute top-0 right-0 text-white font-black text-center m-auto border flex justify-center items-center border-white dark:border-slate-800 dark:text-slate-100"
                         onClick={changeContent}
@@ -108,9 +115,12 @@ const Product = () => {
                         className="rounded-md"
                       />
                       <div className="">
-                        <h3 className="text-lg font-semibold my-3">
-                          {pop.name}
-                        </h3>
+                        <div className="my-3 flex items-end text-right justify-end">
+                          <p className="line-through text-red-700">Rp 60.000,-</p>
+                          <h3 className="text-lg font-semibold underline">
+                            RP 40.000,-
+                          </h3>
+                        </div>
                         <p className="text-center pb-1">Jenis Bahan:</p>
                         <form className="flex gap-5 justify-center">
                           <div className="flex items-center gap-1">
@@ -186,8 +196,8 @@ const Product = () => {
                             <label htmlFor="xxl">XXL</label>
                           </div>
                         </form>
-                        <p className="my-4">{pop.desc}</p>
-                        <div className="flex justify-center items-center">
+                        {/* <p className="my-4">{pop.desc}</p> */}
+                        <div className="flex justify-center items-center pt-5">
                           <a
                             href="http://wa.me/6281311118809"
                             target="blank"
